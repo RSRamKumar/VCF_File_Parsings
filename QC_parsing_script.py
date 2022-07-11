@@ -135,3 +135,12 @@ col  = ['sample_id', 'run_id',
 df = pd.DataFrame(final_df,columns= col  )
 print(df.head())
 df.to_excel ( 'final_parsed_file.xlsx', index = False, header=True)
+
+
+
+#https://www.stackvidhya.com/replace-header-with-first-row-in-pandas/
+
+#https://superuser.com/questions/1502544/cant-cd-to-desktop-anymore
+
+# https://www.youtube.com/watch?v=mHV1Yh7McWA
+#vscode Cannot be loaded because running scripts is disabled on this system
