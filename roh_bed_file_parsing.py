@@ -9,8 +9,6 @@ import pandas as pd
 
 import os
 
-os.chdir(r'C:\Users\RamKumarRuppaSurulin\Arcensus GmbH\Research and Development - General\ROH\ROH_data') 
-
 roh_bed_files = [file for file in os.listdir() if file.endswith('.bed') ] 
 
 #print(len(roh_bed_files))
