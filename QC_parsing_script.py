@@ -9,8 +9,7 @@ import pandas as pd
 #import humanize
 
  
-os.chdir(r'C:\Users\RamKumarRuppaSurulin\OneDrive - Arcensus GmbH\Desktop\parsing_files' )
-
+ 
 mapping_metrics_files = [ file for file in os.listdir() if 'mapping_metrics' in file]
 
 ploidy_estimation_files = [ file for file in os.listdir() if 'ploidy_estimation' in file]
