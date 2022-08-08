@@ -9,8 +9,7 @@
 import pandas as pd
 
 import os
-os.chdir(r'C:\Users\RamKumarRuppaSurulin\Arcensus GmbH\Research and Development - General\RepeatExpansion\ExpansionHunterOutput')
-
+ 
 eh_files = [file for file in os.listdir()]
 
 #print(len(eh_files))
