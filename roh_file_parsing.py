@@ -10,9 +10,6 @@
 import pandas as pd
 import re 
 import os
-#os.chdir(r'C:\Users\RamKumarRuppaSurulin\OneDrive - Arcensus GmbH\Desktop\ROH')
-
-os.chdir(r'C:\Users\RamKumarRuppaSurulin\Arcensus GmbH\Research and Development - General\ROH\ROH_data') 
 
 roh_files = [file for file in os.listdir() if 'roh_metrics' in file] 
 
