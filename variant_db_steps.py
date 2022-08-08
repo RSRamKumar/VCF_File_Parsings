@@ -1,4 +1,4 @@
-# VCF file allele frequency calculating script
+# VCF file variant count calculating script
 # Version: 1
 # Author: Ram Kumar
 # Date: 13 and 14 July 2022 
@@ -8,9 +8,6 @@ import pandas as pd
 import os
 from collections import Counter
 import time
-
-
-os.chdir(r'C:\Users\RamKumarRuppaSurulin\Arcensus GmbH\Research and Development - General\Ram\VCF\large_vcf_files')
 
 large_vcf_files = [file for file in os.listdir() if file.endswith('.gz')]
 
