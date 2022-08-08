@@ -26,7 +26,7 @@ logging.basicConfig(filename=log_file_path,
                     format = '%(asctime)s -%(name)s - %(levelname)s -%(message)s',
                     level = logging.DEBUG)
 
-large_vcf_files = [file for file in os.listdir() if file.endswith('.gz')][:50]
+large_vcf_files = [file for file in os.listdir() if file.endswith('.gz')] 
  
  
 
@@ -76,7 +76,7 @@ def calculating_complete_variant_list(vcf_file):
     return variant_identifiers_list
 
 def calculating_variant_frequency(variants_list):  
-    pd.DataFrame.from_dict(data= dict(reversed(Counter(variants_list).most_common())) , orient='index').to_csv(r'C:\Users\RamKumarRuppaSurulin\OneDrive - Arcensus GmbH\Desktop\testVCF\variantcounts_file.csv', header=False) 
+    pd.DataFrame.from_dict(data= dict(reversed(Counter(variants_list).most_common())) , orient='index').to_csv('variantcounts_file.csv', header=False) 
     gc.collect()
  
 
