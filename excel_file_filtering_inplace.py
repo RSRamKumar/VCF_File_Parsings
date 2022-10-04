@@ -39,3 +39,5 @@ if __name__ == '__main__':
 
     for input_file in CNV_files_list+SV_files_list:
         filtering_files(input_file)
+
+      #https://youtu.be/-w4D1NGn_FA
