@@ -10,7 +10,7 @@
 
 const XLSX = require('xlsx');
 
-const workbook = XLSX.readFile('file.xlsx')
+const workbook = XLSX.readFile('dff.xlsx')
 const worksheet = workbook.Sheets['Sheet1']
 
 
@@ -26,16 +26,30 @@ function calculatingElementsCount(columnName){
 
     }
     for (const item of sampleArray) {
-        counts[item] = counts[item] ? counts[item] + 1 : 1;
+        if (item) {
+            counts[item.trim()] = counts[item.trim()] ? counts[item.trim()] + 1 : 1;
+        }
       }
-      
       //console.log(counts)
-
     return counts
 }
 
 console.log(calculatingElementsCount('moi'))
 console.log(calculatingElementsCount('initial_class'))
 console.log(calculatingElementsCount('impact_on_protein'))
+console.log(calculatingElementsCount('mutation_type_field'))
 
  
+
+
+Output:
+{ AR: 37, XLR: 1, AD: 2 }
+{ P: 11, VUS: 10, LP: 19 }
+{ Missense: 19, Frameshift: 10, 'Splicing mutation': 6, Nonsense: 5 }
+{
+  Substitution: 28,
+  Deletion: 8,
+  Duplication: 2,
+  Subsituation: 1,
+  Delins: 1
+}
