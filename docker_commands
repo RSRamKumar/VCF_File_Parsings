@@ -1,0 +1,13 @@
+
+
+
+docker build -t 'eh_parser' .
+
+docker images
+
+docker run -ti eh_parser
+
+docker run -ti --name eh_parser_container eh_parser
+docker ps -a
+
+docker run -v 'C:\Users\RamKumarRuppaSurulin\OneDrive - Arcensus GmbH\Desktop\Expansion Hunter:/usr/src/app' eh_parser
