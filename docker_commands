@@ -11,3 +11,6 @@ docker run -ti --name eh_parser_container eh_parser
 docker ps -a
 
 docker run -v 'C:\Users\RamKumarRuppaSurulin\OneDrive - Arcensus GmbH\Desktop\Expansion Hunter:/usr/src/app' eh_parser
+
+
+#https://docs.docker.com/language/python/build-images/
